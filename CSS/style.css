@@ -1,0 +1,153 @@
+/* commn mange */
+* {
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+
+:root {
+    --font-head: "Pacifico", cursive;
+    --font-s-head: "Righteous", sans-serif;
+    --font-text: "PT Sans Caption", sans-serif;
+}
+
+.font-head {
+    font-family: var(--font-head);
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    color: #2f2f2f;
+    width: fit-content;
+}
+
+.font-head::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 0rem;
+    transition: height 350ms;
+    z-index: -1;
+    background-color: #ffcb74;
+}
+
+.font-head:hover::before {
+    height: 70%;
+}
+
+.font-second-head {
+    font-family: var(--font-s-head);
+}
+
+.font-text {
+    font-family: var(--font-text);
+}
+
+.base-color {
+    background-color: #f6f6f6;
+}
+
+
+.main-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin: auto;
+}
+
+
+hr.style18 {
+    height: 1.875rem;
+    border-style: solid;
+    border-color: #111111;
+    border-width: .125rem 0 0 0;
+    border-radius: .625rem;
+
+}
+
+hr.style18-end {
+    height: 1.875rem;
+    border-style: solid;
+    border-color: #111111;
+    border-width: .125rem 0 0 0;
+    border-radius: .625rem;
+    transform: rotate(180deg);
+}
+
+hr.style18::before,
+hr.style18-end::before {
+    display: block;
+    content: "";
+    height: 1.875rem;
+    margin-top: -1.9375rem;
+    border-style: solid;
+    border-color: #111111;
+    border-width: 0 0 .0625rem 0;
+    border-radius: 1.25rem;
+}
+
+h2.s-head {
+    background-image: linear-gradient(to right, black, rgb(165, 165, 165));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.first-bookmark {
+    color: #000;
+}
+
+.second-bookmark {
+    color: #808080;
+}
+
+.form-control:focus {
+    color: #2f2f2f;
+    border-color: #ffcb74;
+    outline: 0;
+    box-shadow: 0 0 0 4px #ffcb7440;
+}
+
+.btn-submit {
+    background-color: #f5ac2f;
+    transition: background-color 300ms linear;
+    color: #fff;
+    transition: all 300ms ease-out;
+}
+
+.btn-submit:hover {
+    background-color: #808080;
+    color: #fff;
+
+}
+
+.btn-update {
+    background-color: #0909;
+    transition: background-color 300ms linear;
+    color: #fff;
+    transition: all 300ms ease-in;
+
+}
+
+.btn-update:hover {
+    background-color: #808080;
+    color: #fff;
+
+}
+
+/* screens */
+
+@media (min-width: 0) and (max-width:770px) {
+    .f-button {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 0) and (max-width:590px) {
+    .font-second-head {
+        font-size: 22px;
+    }
+
+    .f-button {
+        font-size: 6px;
+    }
+
+}
